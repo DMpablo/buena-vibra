@@ -1,0 +1,129 @@
+$color1:rgb(255, 255, 255);
+$color2:rgb(236, 93, 205);
+$color3:rgb(252, 224, 245);
+$color4:rgb(0, 0, 0);
+$size-title:24px;
+$size-parrafos: 14px;
+$font-300: 300;
+$font-500: 500;
+$font: 'Raleway', sans-serif;
+
+html{
+    margin: 0;
+    padding: 0;
+    h5{font-size: $size-title; font-weight: $font-500; font-family: $font;}
+    h4{ font-size: $size-title; font-weight: $font-300; font-family: $font;}
+    a,p{ text-decoration: none; font-size: $size-parrafos; font-weight: $font-300; font-family: $font;}
+   /*  @media (max-width: 650px) {
+        h3{ font-size: 20px;}
+        h4{ font-size: 15px;}
+        p{  font-size: 15px;}
+    } */
+    body{
+        background-color: $color1;
+        justify-content: center;
+        .home-inicio{
+            display: block;
+            text-align: center;
+            @media (min-width: 650px) {
+                margin-top: -100px;
+                }           
+           img{
+               height: 100%;
+               width: 100%;
+               opacity: 0.5;
+           }
+           div.text-inicio{
+            
+               position: absolute;
+               width: 100%;
+               height:100%;
+               color: $color4;
+               padding-top: 20%;
+               
+               .titulo-inicio{font-size: $size-title; 
+                font-weight: $font-500; 
+                font-family: $font;
+                }
+
+               .subtitulo-inicio{font-size: $size-title; font-weight: $font-300; font-family: $font; margin-top: -30px;}
+                
+               @media (min-width: 650px) {
+                    .titulo-inicio{font-size: 70px;}
+                    .subtitulo-inicio{font-size: 50px; margin-top: -30px;}
+                } 
+           }
+           
+        }
+            #carousel1{
+            margin: -50px 0px 50px;
+            .img-carousel{
+                width: 200px; /* width of container */
+                height: 100px; /* height of container */
+                object-fit: cover;
+                object-position: 20% 10%; /* try 20px 10px */ 
+                @media (min-width: 650px) {
+                    height: 300px;
+                }
+            }
+
+        }
+        
+        div.container {                  
+            max-width: 80%;
+            margin: 0 auto;
+            padding: 0 1rem;
+            @media (max-width: 650px) {
+                max-width: 100%;
+            }
+
+            button.btn1{
+                background-color: $color2;
+                height: 60px;
+            }    
+            div{ 
+                div.card{
+                    padding: 0;
+                }
+                .btn2{
+                    background-color: $color3;
+                }
+               
+            }
+            div#manos, #peluqueria{
+                background-color: $color2;
+            }
+        
+        }  
+
+        footer{
+            background-color: $color3;
+            height: auto;
+            width: 100%;
+            .footer1{
+                text-align: center;
+                margin-bottom: 30px;   
+                a{
+                    color: $color4;
+                }
+                
+                .img-icons{
+                    width: 30px;
+                    height: 30px;
+                } 
+                img{
+                    height: 200px;
+                }            
+            }
+            .footer2{
+                iframe{
+                    width: 100%;
+                }
+            }
+            
+            
+
+        }  
+        
+    }
+}  
